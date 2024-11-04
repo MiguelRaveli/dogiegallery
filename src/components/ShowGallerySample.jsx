@@ -16,7 +16,7 @@ const ShowGallerySample = () => {
 
   useEffect(() => {
     // Só chama fetchImageDog quando dog tem um valor válido
-    if (dog) {
+    if (dog.length !== 0) {
       fetchImageDog(dog, setImageDog, setLoading);
     }
   }, [dog]);
@@ -26,7 +26,7 @@ const ShowGallerySample = () => {
         <BarLoader loading={loading} />
       ) : (
         <>
-          <div className="rounded visible relative bg-red-500 text-white flex items-center justify-center w-screen p-5 col-span-2 text-left md:w-full md:text-xs">
+          <div className="rounded visible relative bg-red-400 text-white flex items-center justify-center w-screen p-5 col-span-2 text-left md:w-full md:text-xs">
             <img
               className="h-3/4 w-1/4 bg-contain rounded-lg md:w-1/3 lg:w-1/5 xl:w-1/5"
               src={imageDog.url}

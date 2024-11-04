@@ -12,7 +12,7 @@ const Card = ({ dog }) => {
     <>
       <Link
         to={`/gallery/dogie-info/${dog.id}`}
-        className="bg-red-500 m-2 ml-1 mr-1 h-60 w-36 p-2 flex flex-col
+        className="bg-red-400 m-2 ml-1 mr-1 h-60 w-36 p-2 flex flex-col
         justify-around rounded-md shadow shadow-black hover:scale-105 duration-100 cursor-pointer xl:h-72 xl:w-52 2xl:h-96 2xl:w-60"
       >
         <img

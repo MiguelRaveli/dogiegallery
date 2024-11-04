@@ -26,7 +26,7 @@ const HomePage = () => {
             como eles tornam a vida mais especial
           </h2>
           <Link
-            className="bg-red-500 text-white px-3 py-2 rounded font-normal xl:text-sm"
+            className="bg-red-400 text-white px-3 py-2 rounded font-normal xl:text-sm transition ease-in-out delay-150 hover:bg-red-500"
             to="/gallery"
           >
             Ver Galeria
@@ -38,7 +38,7 @@ const HomePage = () => {
       {/* Foto de uma mulher segurando um cachorro / banner */}
       <div className="sm:h-1/2 flex items-center justify-center md:h-full">
         <img
-          className="w-2/4 bg-red-500 rounded-full sm:w-3/4 2xl:w-2/4"
+          className="w-2/4 bg-red-400 rounded-full sm:w-3/4 2xl:w-2/4"
           src={womanHoldingDog}
           alt="Mulher segurando um cachorro"
         />
